@@ -18,11 +18,11 @@ Note that at least for now the code is as-is from the compo entry, so it's a "bi
 Code part of this repo is Public Domain, http://unlicense.org/.
 
 3rd party dependencies:
-Processing core lib, https://github.com/processing/processing/ (core folder), LGPL
-Moonlander, https://github.com/anttihirvonen/moonlander, MIT
-Minim, https://github.com/ddf/Minim, LGPL
-PeasyCam https://github.com/jdf/peasycam Apache 2.0
-JOGL, http://jogamp.org/jogl/www/, BSD
+* Processing core lib, https://github.com/processing/processing/ (core folder), LGPL
+* Moonlander, https://github.com/anttihirvonen/moonlander, MIT
+* Minim, https://github.com/ddf/Minim, LGPL
+* PeasyCam https://github.com/jdf/peasycam Apache 2.0
+* JOGL, http://jogamp.org/jogl/www/, BSD
 
 Music has different license, see below
 
