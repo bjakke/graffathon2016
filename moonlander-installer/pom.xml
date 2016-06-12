@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>moonlander-installer</groupId>
+  <artifactId>moonlander-installer</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-install-plugin</artifactId>
+  			<version>2.5.2</version>
+  			<executions>
+  				<execution>
+            		<!-- disable standard install -->
+            		<id>default-install</id>
+            		<phase>none</phase>
+          		</execution>
+  				<execution>
+		            <id>install-moonlander</id>
+		            <phase>install</phase>
+		            <goals>
+		              <goal>install-file</goal>
+		            </goals>
+		            <configuration>
+		            	<file>${project.basedir}/lib/Moonlander.jar</file>
+		            	<groupId>com.github.anttihirvonen</groupId>
+		            	<artifactId>moonlander</artifactId>
+		            	<version>0.9.0</version>
+		            	<packaging>jar</packaging>		            	
+		            </configuration>
+		        </execution>
+  			</executions>
+  		</plugin>
+  	</plugins>
+  </build>
+</project>

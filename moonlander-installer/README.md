@@ -1,0 +1,1 @@
+Subproject for installing Moonlander https://github.com/anttihirvonen/moonlander jar to local maven (.m2) repo as it is not available from any maven repo.
